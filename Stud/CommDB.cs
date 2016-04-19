@@ -53,6 +53,7 @@ public class CommDB
     {
         string mystr = ConfigurationManager.AppSettings["myconnstring"];
         SqlConnection myconn = new SqlConnection();
+        string stringtest="0";
         myconn.ConnectionString = mystr;
         myconn.Open();
         SqlCommand mycmd = new SqlCommand(sql, myconn);
