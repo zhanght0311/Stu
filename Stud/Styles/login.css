@@ -1,0 +1,9 @@
+﻿body{ margin:px; padding:0px; font-size:12px; background-color:#4faaff;}
+#main{ position:absolute; top:50%; left:50%; margin-top:-180px; margin-left:-317px;}
+#top{ height:114px; width:646px; background:url(../Image/Login/login_01.gif);}
+#bottom{ clear:both; height:311px; width:646px;}
+#bottom_one{ height:311px; width:88px; background:url(../Image/Login/login_02.gif); float:left;}
+#bottom_two{ height:311px; width:476px; background:url(../Image/Login/login_03.gif); float:left;}
+#bottom_three{ height:311px; width:82px; background:url(../Image/Login/login_04.gif); float:left;}
+.Logintable{ margin-top:80px; margin-left:100px;}
+.Loginspan{ color:#8CC5e3; font-weight:bold;}

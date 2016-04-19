@@ -1,0 +1,70 @@
+﻿body
+{
+    margin:1px; padding:0px; font-size:12px; background-color:#ecf6fe;
+}
+.table
+{
+    border-collapse:collapse;
+    height:24px;
+    line-height:24px;
+}
+.table tr
+{
+    border-left:solid 1px #FFF;
+    border-right:solid 1px #20527d;
+}
+.table tr td
+{
+    border:solid 1px #20527d;
+}
+.divStyle1
+{
+    background-image:url(../Image/Tab/Tab_01.gif);
+    height:25px;
+}
+.TabText
+{
+    font-size:12px;
+    width:60px;
+    text-align:center;
+}
+.TabText1
+{
+    font-size:12px;
+    width:140px;
+    text-align:center;
+}
+.titlebg
+{
+    background-image:url(../Image/Tab/Tab_01.gif);
+    height:25px;
+}
+.td1
+{
+    font-size:12px;
+    background-color:#c6e5ff;
+    color:#20527d;
+    width:85px;
+}
+.td2
+{
+    font-size:12px;
+    background-color:#e4f3ff;
+    color:#20527d;
+    width:150px;
+}
+.td3{font-size:12px;background-color:#c6e5ff; color:#20527d;text-align:center;}
+.td4{font-size:12px;background-color:#e4f3ff; color:#20527D;text-align:center;}
+.tabletop
+{
+    background-image:url(../Image/Tab/Tab_14.gif);
+    height:24px;
+    background-repeat:repeat-x;
+    color:#20527d;
+    text-align:center
+}
+.tabItem{ height:18px; background-repeat:repeat-x; color:#20527d;text-align:center}
+.Calendar1{ font-size:15px; font-weight:bold;}
+A:link {color: #039; text-decoration:none}
+A:visited {color: #003399; text-decoration:none}
+A:hover { text-decoration:none;}
