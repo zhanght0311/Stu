@@ -25,11 +25,11 @@ namespace Stud.students
         protected void Ibt_Submit_Click(object sender, ImageClickEventArgs e)
         {
             string mysql;
-            mysql = "select max(bianhao) from Xuexizongjie";
+            mysql = "select max(convert(int,substring(bianhao,1,len(bianhao)))) from Xuexizongjie";
             myds = mydb.ExecuteQuery(mysql, "Xuexizongjie");
-            string tmp = (string)myds.Tables["Xuexizongjie"].Rows[0][0];
-            int i = Convert.ToInt32(tmp);
-            //int i = (int)myds.Tables["Xuexizongjie"].Rows[0][0];
+            //string tmp = (string)myds.Tables["Xuexizongjie"].Rows[0][0];
+            //int i = Convert.ToInt32(tmp);
+            int i = (int)myds.Tables["Xuexizongjie"].Rows[0][0];
             i = i + 1;
             mysql = "insert into Xuexizongjie values(" + i + "," + Session["uno"] + ",'"
                 + Tb_Title.Text + "','" + Tb_TaskSummary.Text + "','"

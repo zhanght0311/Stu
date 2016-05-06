@@ -123,6 +123,7 @@
     <Content Include="scripts\function.js" />
     <Content Include="index.aspx" />
     <None Include="Properties\PublishProfiles\123.pubxml" />
+    <None Include="Properties\PublishProfiles\1234.pubxml" />
     <None Include="Properties\PublishProfiles\发布.pubxml" />
     <None Include="scripts\jquery-1.4.1-vsdoc.js" />
     <Content Include="scripts\jquery-1.4.1.js" />

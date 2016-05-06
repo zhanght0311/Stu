@@ -24,10 +24,11 @@ namespace Stud.teacher1
         protected void Ibt_Submit_Click(object sender, ImageClickEventArgs e)
         {
             string mysql;
-            mysql = "select max(bianhao) from Keyan";
+            mysql = "select max(convert(int,substring(bianhao,1,len(bianhao)))) from Keyan";
             myds = mydb.ExecuteQuery(mysql, "Keyan");
-            string tmp = (string)myds.Tables["Keyan"].Rows[0][0];
-            int i = Convert.ToInt32(tmp);
+            //string tmp = (string)myds.Tables["Keyan"].Rows[0][0];
+            //int i = Convert.ToInt32(tmp);
+            int i = (int)myds.Tables["Keyan"].Rows[0][0];
             i = i + 1;
             mysql = "insert into Keyan values(" + i + "," + Tb_Addtime.Text + ",'"
                 + Tb_Title.Text + "','" + Tb_TaskSummary.Text + "','"

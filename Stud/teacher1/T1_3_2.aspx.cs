@@ -28,10 +28,11 @@ namespace Stud.teacher1
         protected void Ibt_Submit_Click(object sender, ImageClickEventArgs e)
         {
             string mysql;
-            mysql = "select max(bianhao) from Pingjiaxuesheng";
+            mysql = "select max(convert(int,substring(bianhao,1,len(bianhao)))) from Pingjiaxuesheng";
             myds = mydb.ExecuteQuery(mysql, "Ping");
-            string tmp = (string)myds.Tables["Ping"].Rows[0][0];
-            int i = Convert.ToInt32(tmp);
+            //string tmp = (string)myds.Tables["Ping"].Rows[0][0];
+            //int i = Convert.ToInt32(tmp);
+            int i = (int)myds.Tables["Ping"].Rows[0][0];
             i = i + 1;
             mysql = "insert into Pingjiaxuesheng values(" + i + ",'" + Session["test10"] + "','"
                        + Tb_Title.Text + "','" + Tb_TaskSummary.Text + "','"
